@@ -11,7 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
@@ -28,15 +28,13 @@ header {
 
 div h1 {
   text-align: center;
-  margin: .75rem 0 .75rem;
+  margin: .75rem 0;
 }
 
-header nav {
-  text-align: right;
-}
-
-nav ul {
+header nav ul {
+  text-align: center;
   margin: 0;
+  padding-bottom: 1em;
 }
 
 ul li {
@@ -47,7 +45,6 @@ ul li {
 li a {
   text-decoration: none;
   color: #0074d9;
-
 }
 
 .current {
@@ -58,4 +55,18 @@ li a {
 li a:hover {
   background-color: #0074d9;
   color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  div h1 {
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  header nav ul {
+    text-align: right;
+    padding-bottom: 0;
+  }
+
 }
